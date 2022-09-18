@@ -1,7 +1,7 @@
 {
   "importMap": "./import-map.json",
   "tasks": {
-    "start": "denon run -A ./src/mod.ts",
-    "setWebhook": "deno run -A ./src/setWebhook.ts"
+    "start": "denon run -A ./src/utils/pooling.ts",
+    "setWebhook": "deno run -A ./src/utils/setWebhook.ts"
   }
 }
