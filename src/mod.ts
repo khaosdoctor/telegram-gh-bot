@@ -1,5 +1,5 @@
+import { config } from 'std/dotenv/mod.ts'
 import { serve } from 'std/http/server.ts'
-import { config } from 'x/dotenv@v3.2.0/mod.ts'
 import { Update } from 'x/grammy@v1.11.0/types.ts'
 
 config({ export: true })
