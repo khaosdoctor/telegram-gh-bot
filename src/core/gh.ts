@@ -1,3 +1,5 @@
+import { config } from '../config.ts'
+
 export interface GHSearchResult {
   total_count: number
   incomplete_results: boolean
@@ -30,7 +32,7 @@ export const search = async (query: string) => {
     method: 'GET',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `Bearer ${Deno.env.get('GH_API_TOKEN')}`
+      Authorization: `Bearer ${config.gh.token}`
     }
   })
   return result.json() as Promise<GHSearchResult>
